@@ -10,6 +10,7 @@ namespace BackSeoga.Controllers
     {
         [HttpGet]
         [Route("meteogalicia")]
+        //Construccion de la URL con la peticion GET y devolucion del string con la meteorologia
         public async Task<string> GetTest(int idConcello)
         {
             var httpClient = new HttpClient();
@@ -23,6 +24,7 @@ namespace BackSeoga.Controllers
             return str;
         }
 
+        //Construccion del string que se muestra por pantalla
         private string? impPant(Seoga seoga)
         {
             string res = "Nombre de la ciudad: " + seoga.predConcello.nome + "\n \n";
@@ -47,6 +49,7 @@ namespace BackSeoga.Controllers
             return res;
         }
 
+        //Revision de la humedad no esta disponible                                 
         private string revisionPorcentaje(int porcentaje)
         {
             string res;
@@ -62,6 +65,8 @@ namespace BackSeoga.Controllers
 
             return res;
         }
+
+        //Creacion de un diccionario con los estados del tiempp 
         private string conversionTiempo(int id)
         {
             var state = new Dictionary<int, string>()
