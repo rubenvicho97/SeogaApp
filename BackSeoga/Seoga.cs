@@ -12,7 +12,7 @@ namespace BackSeoga
     {
         public int idConcello { get; set; }
 
-        public List<listaPredDiaConcello> listaPredDiaConcello { get; set; }
+        public List<listaPredDiaConcello>? listaPredDiaConcello { get; set; }
         public string? nome { get; set; }
     }
 
@@ -22,8 +22,8 @@ namespace BackSeoga
         public int tMax { get; set; }
         public int tMin { get; set; }
 
-        public ceo ceo { get; set; }
-        public pchoiva pchoiva { get; set; }
+        public ceo? ceo { get; set; }
+        public pchoiva? pchoiva { get; set; }
     }
 
     public class pchoiva

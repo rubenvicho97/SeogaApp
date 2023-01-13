@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackSeoga", "BackSeoga\BackSeoga.csproj", "{F0BF98F6-9F05-4045-87B9-28A188F53A78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackSeoga", "BackSeoga\BackSeoga.csproj", "{F0BF98F6-9F05-4045-87B9-28A188F53A78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontSeoga", "FrontSeoga\FrontSeoga.csproj", "{408C3F9C-31F0-4DCE-B480-6C996667DF1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontSeoga", "FrontSeoga\FrontSeoga.csproj", "{408C3F9C-31F0-4DCE-B480-6C996667DF1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D164CD70-4E3F-4B40-8A6D-7A9A4D23F121}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

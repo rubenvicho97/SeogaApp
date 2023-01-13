@@ -27,7 +27,7 @@ namespace BackSeoga.Controllers
         //Construccion del string que se muestra por pantalla
         private string? impPant(Seoga seoga)
         {
-            string res = "Nombre de la ciudad: " + seoga.predConcello.nome + "\n \n";
+            string res = $"Nombre de la ciudad: {seoga.predConcello.nome}\n \n";
 
             foreach (var dia in seoga.predConcello.listaPredDiaConcello)
             {
