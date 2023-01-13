@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Meteogalicia";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Meteogalicia</h1>
+
+    <p>Selecciona una cuidad para ver su meteorología</p>
+
+    <form action="https://localhost:7203/api/Segoa/meteogalicia?idConcello" method="get">
+        <select name="idConcello">
+            <option value="15030">A Coruña</option>
+            <option value="15078">Santiago de Compostela</option>
+            <option value="15036">Ferrol</option>
+            <option value="15052">Muxía</option>
+            <option value="15070">As Pontes de García Rodríguez</option>
+        </select>
+        <input type="submit" value="Enviar" />
+    </form>
+
+
+</div>
