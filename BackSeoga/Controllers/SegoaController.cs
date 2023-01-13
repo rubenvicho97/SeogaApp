@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BackSeoga;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace WebApplication2.Controllers
+namespace BackSeoga.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -24,7 +25,7 @@ namespace WebApplication2.Controllers
 
         private string? impPant(Seoga seoga)
         {
-            string res = "Nombre de la ciudad: " + seoga.predConcello.nome +"\n \n";
+            string res = "Nombre de la ciudad: " + seoga.predConcello.nome + "\n \n";
 
             foreach (var dia in seoga.predConcello.listaPredDiaConcello)
             {
@@ -50,7 +51,8 @@ namespace WebApplication2.Controllers
         {
             string res;
 
-            if (porcentaje == -9999) {
+            if (porcentaje == -9999)
+            {
                 res = "*No Disponible*";
             }
             else
@@ -58,7 +60,7 @@ namespace WebApplication2.Controllers
                 res = porcentaje + " %";
             }
 
-            return res; 
+            return res;
         }
         private string conversionTiempo(int id)
         {

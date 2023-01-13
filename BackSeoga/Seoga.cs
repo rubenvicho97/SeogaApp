@@ -1,7 +1,8 @@
 ﻿using System.Runtime.ConstrainedExecution;
 
-namespace WebApplication2
+namespace BackSeoga
 {
+    //Modelo de datos del JSON
     public class Seoga
     {
         public predConcello? predConcello { get; set; }
@@ -20,7 +21,7 @@ namespace WebApplication2
         public DateTime dataPredicion { get; set; }
         public int tMax { get; set; }
         public int tMin { get; set; }
-        
+
         public ceo ceo { get; set; }
         public pchoiva pchoiva { get; set; }
     }

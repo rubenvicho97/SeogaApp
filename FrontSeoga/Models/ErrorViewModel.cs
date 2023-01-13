@@ -1,4 +1,4 @@
-namespace WebApplication1.Models
+namespace FrontSeoga.Models
 {
     public class ErrorViewModel
     {
